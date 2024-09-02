@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/D/FCAI/OLMS/cmake-build-debug",
-		"source" : "C:/D/FCAI/OLMS"
+		"build" : "D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug",
+		"source" : "D:/FCAI/OLMS/Online-Library-Management-System"
 	},
 	"version" : 
 	{

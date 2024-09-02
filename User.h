@@ -14,13 +14,17 @@ private:
     string name;
     int age;
     string gender;
-    int phone;
+    string phone;
 public:
-    explicit User(const string& = "N/A", const int& = 0, const string& = "N/A", const int& = 0);
+    explicit User(const string& = "N/A", const int& = 0, const string& = "N/A", const string& = "N/A");
     void setName(const string&);
     void setAge(const int&);
     void setGender(const string&);
-    void setPhone(const int&);
+    void setPhone(const string &);
+    string getName() const;
+    int getAge() const;
+    string getGender() const;
+    string getPhoneNumber() const;
     virtual void DisplayInfo() const;
 };
 

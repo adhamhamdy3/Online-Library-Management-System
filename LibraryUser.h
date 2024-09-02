@@ -11,11 +11,22 @@
 
 class LibraryUser : User {
 private:
+    string username;
+    string password;
+    int confirmationNumber;
+    string getUsername() const;
+    string getPassword() const;
+    int getConfirmationNumber() const;
     set<Book> borrowedBooks;
 public:
+    explicit LibraryUser(const string& = "N/A", const string& = "N/A", const string& = "N/A", const int& = 0, const string& = "N/A",
+                const string& = "N/A");
+    void setUsername(const string&);
+    void setPassword(const string&);
+    void setConfirmationNumber(const int&);
     void displayBorrowedBooks() const;
+    void DisplayInfo() const override;
     friend class Librarian;
-
 };
 
 
