@@ -10,17 +10,17 @@
 #include "LibraryUser.h"
 #include <algorithm>
 
-class Librarian : User {
+class Librarian : public User {
 private:
-    Library& library;
+    Library* library;
 public:
-    explicit Librarian(Library &);
-    explicit Librarian(Library&, const string& = "N/A", const int& = 0, const string& = "N/A", const int& = 0);
-    void setLibrary(Library&);
+    explicit Librarian(const string& = "N/A", const int& = 0, const string& = "N/A", const string& = "N/A", Library* = nullptr);
+    void setLibrary(Library*);
     void borrowUserWithTitle(LibraryUser&, const string&);
     void borrowUserWithID(LibraryUser&, const int&);
     void returnBookWithTitle(LibraryUser&, const string&);
     void returnBookWithID(LibraryUser&, const int&);
+    void DisplayInfo() const override;
 };
 
 

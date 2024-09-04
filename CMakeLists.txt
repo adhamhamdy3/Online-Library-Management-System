@@ -13,4 +13,7 @@ add_executable(OLMS main.cpp
         Librarian.cpp
         Librarian.h
         LibraryUser.cpp
-        LibraryUser.h)
+        LibraryUser.h
+        Transactions.cpp
+        Transactions.h
+)
