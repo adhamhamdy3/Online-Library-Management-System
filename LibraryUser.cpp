@@ -13,8 +13,13 @@ void LibraryUser::displayBorrowedBooks() const {
 
 }
 
+<<<<<<< HEAD
 LibraryUser::LibraryUser(const string &usernm, const string &pass, const int &conf, const string &n, const int &ag, const string &g, const string &phn)
 : username(usernm), password(pass), confirmationNumber(conf),User(n, ag, g, phn) {
+=======
+LibraryUser::LibraryUser(const string &usernm, const string &pass, const string &n, const int &ag, const string &g, const string &phn)
+: username(usernm), password(pass), User(n, ag, g, phn) {
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 }
 
 void LibraryUser::setUsername(const string &usernm) {
@@ -37,13 +42,20 @@ string LibraryUser::getPassword() const {
     return password;
 }
 
+<<<<<<< HEAD
 //int LibraryUser::getConfirmationNumber() const {
 //    return confirmationNumber;
 //}
+=======
+int LibraryUser::getConfirmationNumber() const {
+    return confirmationNumber;
+}
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 
 void LibraryUser::DisplayInfo() const {
     User::DisplayInfo();
 }
+<<<<<<< HEAD
 
 LibraryUser &LibraryUser::operator=(const LibraryUser &user) {
     this->username = user.username;
@@ -58,3 +70,5 @@ LibraryUser &LibraryUser::operator=(const LibraryUser &user) {
 bool LibraryUser::operator<(const LibraryUser &rhs) const {
     return this->confirmationNumber < rhs.confirmationNumber;
 }
+=======
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62

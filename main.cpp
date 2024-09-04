@@ -8,6 +8,7 @@
 int main() {
     Library L;
     Librarian adham("adham", 20, "male", "214", &L);
+<<<<<<< HEAD
 
     LibraryUser form;
     form.setUsername("adham");
@@ -36,6 +37,14 @@ int main() {
     cout << t.getPassword(1234);
 //    t.deleteAccount("adham", "1234", 1234);
     t.Login("adham", "1234");
+=======
+    LibraryUser hazem;
+    adham.borrowUserWithTitle(hazem, "1984");
+    hazem.displayBorrowedBooks();
+    cout << endl << "----------" << endl;
+    adham.returnBookWithID(hazem, 2);
+    hazem.displayBorrowedBooks();
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
     return 0;
 }
 

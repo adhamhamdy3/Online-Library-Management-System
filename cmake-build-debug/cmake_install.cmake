@@ -1,4 +1,4 @@
-# Install script for directory: C:/D/FCAI/OLMS
+# Install script for directory: D:/FCAI/OLMS/Online-Library-Management-System
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/D/FCAI/OLMS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

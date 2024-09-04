@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\D\FCAI\OLMS -B C:\D\FCAI\OLMS\cmake-build-debug
+=======
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\FCAI\OLMS\Online-Library-Management-System -B D:\FCAI\OLMS\Online-Library-Management-System\cmake-build-debug
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
@@ -11,6 +15,10 @@
 -- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+<<<<<<< HEAD
 -- Configuring done (2.4s)
+=======
+-- Configuring done (4.6s)
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 -- Generating done (0.0s)
--- Build files have been written to: C:/D/FCAI/OLMS/cmake-build-debug
+-- Build files have been written to: D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug

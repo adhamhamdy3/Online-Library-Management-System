@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="C:/D/Online-Library-Management-System/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -20,6 +21,20 @@
 			<Target title="OLMS">
 				<Option output="C:/D/Online-Library-Management-System/cmake-build-debug/OLMS.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/D/Online-Library-Management-System/cmake-build-debug"/>
+=======
+				<Option working_dir="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OLMS">
+				<Option output="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/OLMS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug"/>
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,6 +48,7 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 OLMS"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -42,6 +58,17 @@
 			<Target title="OLMS/fast">
 				<Option output="C:/D/Online-Library-Management-System/cmake-build-debug/OLMS.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/D/Online-Library-Management-System/cmake-build-debug"/>
+=======
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 OLMS"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OLMS/fast">
+				<Option output="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/OLMS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug"/>
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,6 +82,7 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 OLMS/fast"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/D/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -122,6 +150,69 @@
 			<Option target="OLMS"/>
 		</Unit>
 		<Unit filename="C:/D/Online-Library-Management-System/CMakeLists.txt">
+=======
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 OLMS/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI/OLMS/Online-Library-Management-System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Book.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Book.h">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Librarian.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Librarian.h">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Library.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/Library.h">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/LibraryUser.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/LibraryUser.h">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/User.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/User.h">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/main.cpp">
+			<Option target="OLMS"/>
+		</Unit>
+		<Unit filename="D:/FCAI/OLMS/Online-Library-Management-System/CMakeLists.txt">
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

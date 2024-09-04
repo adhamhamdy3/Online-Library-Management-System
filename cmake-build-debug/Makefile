@@ -56,10 +56,17 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\D\Online-Library-Management-System
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\D\Online-Library-Management-System\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = D:\FCAI\OLMS\Online-Library-Management-System
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = D:\FCAI\OLMS\Online-Library-Management-System\cmake-build-debug
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +93,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\D\Online-Library-Management-System\cmake-build-debug\CMakeFiles C:\D\Online-Library-Management-System\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\D\Online-Library-Management-System\cmake-build-debug\CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\FCAI\OLMS\Online-Library-Management-System\cmake-build-debug\CMakeFiles D:\FCAI\OLMS\Online-Library-Management-System\cmake-build-debug\\CMakeFiles\progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\FCAI\OLMS\Online-Library-Management-System\cmake-build-debug\CMakeFiles 0
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 .PHONY : all
 
 # The main clean target
@@ -224,6 +237,7 @@ LibraryUser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OLMS.dir\build.make CMakeFiles/OLMS.dir/LibraryUser.cpp.s
 .PHONY : LibraryUser.cpp.s
 
+<<<<<<< HEAD
 Transactions.obj: Transactions.cpp.obj
 .PHONY : Transactions.obj
 
@@ -248,6 +262,8 @@ Transactions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OLMS.dir\build.make CMakeFiles/OLMS.dir/Transactions.cpp.s
 .PHONY : Transactions.cpp.s
 
+=======
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 User.obj: User.cpp.obj
 .PHONY : User.obj
 
@@ -317,9 +333,12 @@ help:
 	@echo ... LibraryUser.obj
 	@echo ... LibraryUser.i
 	@echo ... LibraryUser.s
+<<<<<<< HEAD
 	@echo ... Transactions.obj
 	@echo ... Transactions.i
 	@echo ... Transactions.s
+=======
+>>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
 	@echo ... User.obj
 	@echo ... User.i
 	@echo ... User.s
