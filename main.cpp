@@ -8,7 +8,6 @@
 int main() {
     Library L;
     Librarian adham("adham", 20, "male", "214", &L);
-<<<<<<< HEAD
 
     LibraryUser form;
     form.setUsername("adham");
@@ -18,33 +17,34 @@ int main() {
     form.setGender("Male");
     form.setPhone("011");
     form.setConfirmationNumber(1234);
+    form.setEmail("adhamhn333@gmail.com");
 
-    Transactions t;
 
     // Create the account first
-    t.createAccount(form);
-
+    Transactions::createAccount(form);
     // Now, attempt to login
-    LibraryUser* modify = t.Login("adham", "1234");
-
-    if (modify) {
+    LibraryUser* modify = nullptr;
+    if (Transactions::isFound("adham", "12345")){
+        cout << "Welcome" << endl;
+        modify = Transactions::Login("adham", "1234");
+    }
+    if (modify){
         modify->setName("chelsea");
         modify->DisplayInfo();
-    } else {
-        cout << "Login failed!" << endl;
+        cout << "\n\n\n\n";
     }
-    cout << endl << endl;
-    cout << t.getPassword(1234);
-//    t.deleteAccount("adham", "1234", 1234);
-    t.Login("adham", "1234");
-=======
-    LibraryUser hazem;
-    adham.borrowUserWithTitle(hazem, "1984");
-    hazem.displayBorrowedBooks();
-    cout << endl << "----------" << endl;
-    adham.returnBookWithID(hazem, 2);
-    hazem.displayBorrowedBooks();
->>>>>>> 9147720f8220a0b2dcad949462571ac0e1b9eb62
+
+
+
+    cout << endl << "================================================" << endl;
+    cout << "get username function: " << Transactions::getUsername("1234", "adhamhn333@gmail.com", 1234) << endl;
+    Transactions::changeUsername("adham", "adhamhn333@gmail.com", "1234", "adhoosom", 1234);
+    cout << "get username function after changing: " << Transactions::getUsername("1234", "adhamhn333@gmail.com", 1234) << endl;
+    cout << "no of active account = " << Transactions::activeAccountsNumber() << endl;
+    Transactions::deleteAccount("adhoosom", "adhamhn333@gmail.com", "1234", 1234);
+    cout << "no of active account after deleting = " << Transactions::activeAccountsNumber() << endl;
+    cout << Transactions::getUsername("adhamhn333@gmail.com", "1234", 1234);
+
     return 0;
 }
 
