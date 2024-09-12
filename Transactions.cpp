@@ -4,6 +4,9 @@
 
 #include "Transactions.h"
 
+map<string, LibraryUser> Transactions::activeAccounts;
+map<string, int> Transactions::emails;
+
 LibraryUser &Transactions::createAccount(const LibraryUser &user) {
     activeAccounts.insert({user.email, user});
     emails[user.email]++;
@@ -17,81 +20,59 @@ LibraryUser *Transactions::Login(const string &user, const string &pass) {
             return &entity.second;
         }
     }
+    return nullptr;
 }
 
 string Transactions::getUsername(const string &pass, const string &mail, const int &conf) {
-    auto it = activeAccounts.find(mail);
-    if (it != activeAccounts.end()){
-        if (it->second.password == pass && it->second.confirmationNumber == conf){
-            return it->second.getUsername();
-        } else{
-            cout << "Error: User not found!";
-            return "";
-        }
+    //TODO check in the main func is this mail found in emails map or not
+    if (activeAccounts[mail].password == pass && activeAccounts[mail].confirmationNumber == conf){
+        return activeAccounts[mail].username;
     } else{
-        cout << "Error: User not found!";
+        cout << "Error: User not found!" << endl;
         return "";
     }
 }
 
-
 string Transactions::getPassword(const string &user, const string &mail, const int &conf) {
-    auto it = activeAccounts.find(mail);
-    if (it != activeAccounts.end()){
-        if (it->second.username == user && it->second.confirmationNumber == conf){
-            return it->second.getPassword();
-        } else{
-            cout << "Error: User not found!";
-            return "";
-        }
+    //TODO check in the main func is this mail found in emails map or not
+    if (activeAccounts[mail].password == user && activeAccounts[mail].confirmationNumber == conf){
+        return activeAccounts[mail].password;
     } else{
-        cout << "Error: User not found!";
+        cout << "Error: User not found!" << endl;
         return "";
     }
 }
 
 
 void Transactions::changeUsername(const string &old_username, const string &mail, const string &pass, const string &new_username, const int &conf) {
-    auto it = activeAccounts.find(mail);
-    if (it != activeAccounts.end()){
-        if (it->second.username == old_username && it->second.password == pass && it->second.confirmationNumber == conf){
-            it->second.username = new_username;
-        } else {
-            cout << "Error: User not found!";
-        }
+    //TODO check in the main func is this mail found in emails map or not
+    if (activeAccounts[mail].username == old_username && activeAccounts[mail].password == pass && activeAccounts[mail].confirmationNumber == conf){
+        activeAccounts[mail].username = new_username;
     } else{
-        cout << "Error: User not found!";
+        cout << "Error: User not found!" << endl;
     }
 }
 
-
 void Transactions::changePassword(const string &user, const string &mail, const string &old_pass, const string &new_pass, const int &conf) {
-    auto it = activeAccounts.find(mail);
-    if (it != activeAccounts.end()){
-        if (it->second.username == user && it->second.password == old_pass && it->second.confirmationNumber == conf){
-            it->second.username = new_pass;
-        } else {
-            cout << "Error: User not found!";
-        }
+    //TODO check in the main func is this mail found in emails map or not
+    if (activeAccounts[mail].username == user && activeAccounts[mail].password == old_pass && activeAccounts[mail].confirmationNumber == conf){
+        activeAccounts[mail].username = new_pass;
     } else{
-        cout << "Error: User not found!";
+        cout << "Error: User not found!" << endl;
     }
 }
 
 void Transactions::deleteAccount(const string &user, const string &mail, const string &pass, const int &conf) {
-    auto it = activeAccounts.find(mail);
-    if (it != activeAccounts.end()){
-        if (it->second.username == user && it->second.password == pass && it->second.confirmationNumber == conf){
-            activeAccounts.erase(it->first);
-        } else {
-            cout << "Error: User not found!";
-        }
+    //TODO check in the main func is this mail found in emails map or not
+    if (activeAccounts[mail].username == user && activeAccounts[mail].password == pass && activeAccounts[mail].confirmationNumber == conf){
+        activeAccounts.erase(mail);
+        emails.erase(mail);
     } else{
         cout << "Error: User not found!";
     }
 }
 
-int Transactions::activeAccountsNumber() const {
+int Transactions::activeAccountsNumber() {
     return static_cast<int>(activeAccounts.size());
 }
 
